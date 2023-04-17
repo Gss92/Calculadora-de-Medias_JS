@@ -48,7 +48,7 @@ function updateTable() {
 function updateAverage() {
     const average = calculatorAverage()
     
-    document.getElementById("averageValue").innerHTML = average
+    document.getElementById("averageValue").innerHTML = average.toFixed(2)
     document.getElementById("averageResult").innerHTML = average >= minimumAverage ? spanApproved : spanDisapproved
 }
 
